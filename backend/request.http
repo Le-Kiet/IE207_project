@@ -1,0 +1,38 @@
+###
+POST http://localhost:8000/create-account
+Content-Type: application/json
+{
+    "fullName":"aaaa",
+    "email":"vcl@gmail.com",
+    "password":"Chi"
+}
+
+###
+GET http://localhost:8000/get-all-courses
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY2NTQ1NWY4NWQwZGIzOWI1YjFiNzhjYyIsImZ1bGxOYW1lIjoiTGVLaWV0IiwiZW1haWwiOiJ0dWFua2lldEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IkNoaSIsImNyZWF0ZWRPbiI6IjIwMjQtMDUtMjdUMDk6MzY6NDQuNjM3WiIsIl9fdiI6MH0sImlhdCI6MTcxNzAwNDc4NCwiZXhwIjoxNzE5MTY0Nzg0fQ.mM4cPHw-laEY4860_eDl9V4kRAzQjW3bfcvRonI68bg
+
+###
+POST localhost:8000/edit-course/665771cbee9a4194985d2a19
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY2NTQ1NWY4NWQwZGIzOWI1YjFiNzhjYyIsImZ1bGxOYW1lIjoiTGVLaWV0IiwiZW1haWwiOiJ0dWFua2lldEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IkNoaSIsImNyZWF0ZWRPbiI6IjIwMjQtMDUtMjdUMDk6MzY6NDQuNjM3WiIsIl9fdiI6MH0sImlhdCI6MTcxNzAwNDc4NCwiZXhwIjoxNzE5MTY0Nzg0fQ.mM4cPHw-laEY4860_eDl9V4kRAzQjW3bfcvRonI68bg
+
+{  
+    "title": "hello",
+    "content": [{
+        "word":"かぞく",
+        "kanji":"家族",
+        "translate":"Gia đình"
+    },
+    {
+        "word":"いぬ",
+        "kanji":"犬",
+        "translate":"con chó"
+    },
+    {
+        "word":"えき",
+        "kanji":"駅",
+        "translate":"Ga"
+    }
+    ],
+    "tags": "N3"
+}
